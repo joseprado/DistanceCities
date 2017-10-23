@@ -1,0 +1,37 @@
+Olá, 
+
+Foi utilizado para o desevolvimento da API, a API Google Directions.
+Foi escolhida devido a grande variedade de possibilidade de uso, não só para retornar distancias, mas também o percurso e o meio de transporte.
+Mesmo a necessidade do projeto sendo minima para o tamanho da biblioteca, o mesma foi utilizada pensando em uma futura evolução.
+
+Para que seja realizado o teste utilizar a URL abaixo
+
+http://localhost:8081/WebServiceRest/rest/cities/{xml ou json}/{km ou mi}
+
+
+Tecnologias utilizadas
+Java 8
+Tomcat 8
+Jersey 
+Mysql
+JDBC Connection
+
+
+script data base
+
+create database testedev;
+
+use testedev;
+
+
+CREATE TABLE `testedev`.`city` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  `latitude` DECIMAL(15,8) NOT NULL,
+  `longitude` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+  
+  
+insert into city values (1,'São Paulo', -23.5505, -46.6333);
+insert into city values (2,'São José do Rio Preto',-20.8118,-49.3762);
+insert into city values (5,'Rio de Janeiro', -22.9116, -43.1883);
